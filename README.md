@@ -1,2 +1,2 @@
-# RickAndMprtyGraphQL
-react website
+# RaMGraphQL
+rick and morphy graphql
