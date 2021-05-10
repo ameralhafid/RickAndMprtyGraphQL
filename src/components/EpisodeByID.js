@@ -8,13 +8,12 @@ export function EpisodeByID({ episode }) {
 
     return (
 
-        <div  className="container">
-            <div className="Episode__name">
-                <h3>{episode.id} </h3>
-            </div>
-            <div className="episode__name">
+        <div  className="overviewE">
+            <div className="overviewE__name">
                 <h3>Episode's Name:</h3>
-                <h4> {episode.name} </h4>
+                <h3> {episode.name} </h3>
+                </div>
+                    <div className="overviewE__airdate">
 
                 <h3> Episode's air date: </h3>
                 <h4>{episode.air_date} </h4>
@@ -22,20 +21,20 @@ export function EpisodeByID({ episode }) {
             </div>
 
 
-            <div className="character">
+            <div className="overviewE">
 
                 {episode.characters.map((characters, index) =>
-                    <div key={index} className="containerE">
+                    <div key={index} className="overviewE">
 
-                        <div className="character__name">
+                        <div className="overviewE__character">
                             <h3>{characters.name} </h3>
-                        </div>
-                        <Button className="btn btn-white" disableElevation>
+
+                        <Button  disableElevation>
                             <Link exact to={`/character/${characters.id}`}>
-                                Character details ..
+                                details..
                             </Link>
                         </Button>
-
+                        </div>
                     </div>
                 )}
             </div>

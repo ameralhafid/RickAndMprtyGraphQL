@@ -6,38 +6,41 @@ export function CharacterByID({ character }) {
 
     return (
 
-            <div className="container">
+            <div className="overview">
                 <div className="character__image">
                     <img src={character.image} alt={character.name} />
                 </div>
-                <div className="character__name">
-                    <p>{character.name}</p>
+                <div className="character__heading">
+                    <h3>Name:</h3>
+                    <h3>{character.name}</h3>
                 </div>
-                <div className="character__meta">
+                <div className="overview__gender">
 
+                    <p>Gender:</p>
                     <span>{character.gender}</span>
                 </div>
-                <div className="character__meta">
+                <div className="overview__type">
+                <p>Type:</p>
                 <span>{character.type}</span>
             </div>
-                <div className="character__meta">
-                <span>{character.species}</span>
+                <div className="overview__species">
+                <p>Species:</p>
+                <p>{character.species}</p>
                      </div>
-                <div className="character__meta">
-                    <span>{character.status}</span>
+                <div className="overview__status">
+                    <p>Status:</p>
+                    <p>{character.status}</p>
 
                 </div>
-                <div className="character__name">
-                     All Episodes with "{character.name}"
+                <div className="overview__name">
+                     All Episodes with "{character.name}":
                     {character.episode.map((episode, index) =>
                     <div key={index} className="containerE">
 
-                        <div className="episode__name">
-                            <h3>{episode.name} </h3>
-                        </div>
+
                         <Button className="btn btn-white" disableElevation>
                             <Link exact to={`/episode/${episode.id}`}>
-                                Episode details ..
+                                {episode.name}
                             </Link>
                         </Button>
 
