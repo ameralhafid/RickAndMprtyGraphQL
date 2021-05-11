@@ -1,12 +1,12 @@
 
 import React from 'react';
-import { useQuery} from '@apollo/react-hooks';
-import {GET_PAGES} from '../graphql/get-pages';
+//import { useQuery} from '@apollo/react-hooks';
+//import {GET_PAGES} from '../graphql/get-pages';
 import {Pagination} from "@material-ui/lab";
-import { makeStyles } from '@material-ui/core/styles';
+// import { makeStyles } from '@material-ui/core/styles';
 import "../App.css";
 
-
+/*
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -15,10 +15,10 @@ const useStyles = makeStyles((theme) => ({
         },
     },
 }));
-
+*/
 export function Pages() {
-    const { data } = useQuery(GET_PAGES);
-    const classes = useStyles();
+  //  const { data } = useQuery(GET_PAGES);
+ //   const classes = useStyles();
 
 
     return (
