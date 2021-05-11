@@ -4,15 +4,12 @@ import ApolloClient from 'apollo-boost';
 import {ApolloProvider} from "@apollo/react-hooks";
 import { CharactersContainer} from './containers/CharactersContainer';
 import { EpisodeContainer} from './containers/EpisodeContainer';
-import {Route, BrowserRouter as Router, Link} from "react-router-dom";
+import {Route, BrowserRouter as Router} from "react-router-dom";
 import {Switch} from "react-router";
 import {CharacterDetailContainer, EpisodeDetailContainer} from "./containers/CharacterDetailContainer";
 import Navbar from "./theme/Navbar";
 import './style/style.css';
 import {Pages} from "./components/Pages";
-import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
 
 
 

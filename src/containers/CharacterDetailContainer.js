@@ -10,7 +10,6 @@ export function CharacterDetailContainer() {
     let { id } = useParams();
 
     const { data } = useQuery(CHARACTERBYID, {variables: {id}});
-   // console.log(data);
   return (
         <div className="character">
             {data && data.character &&
@@ -26,7 +25,6 @@ export function EpisodeDetailContainer() {
     let { id } = useParams();
 
     const { data } = useQuery(EPISODEBYID, {variables: {id}});
-    // console.log(data);
     return (
         <div className="character">
             {data && data.episode &&

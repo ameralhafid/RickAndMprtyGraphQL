@@ -2,7 +2,7 @@ import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
 import { GET_CHARACTERS } from '../graphql/get-characters';
 import {Button} from "@material-ui/core";
-import {Link, useParams} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {Pages} from "../components/Pages";
 import {makeStyles} from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
@@ -21,10 +21,9 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 export function CharactersContainer() {
-    let { pageNumber } = useParams();
 
     const { data } = useQuery(GET_CHARACTERS);
-    const [spacing, setSpacing] = React.useState(2);
+    const [spacing] = React.useState(7);
     const classes = useStyles();
 
         return (

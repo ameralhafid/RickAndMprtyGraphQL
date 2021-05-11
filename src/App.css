@@ -213,27 +213,6 @@ body {
   height: auto;
 }
 
-.container .character__attacks {
-  display: flex;
-  padding-left: 10px;
-  padding-right: 10px;
-  justify-content: space-between;
-}
-
-.container .character__attacks span {
-  width: 30%;
-  background-color: #f16820;
-  border-radius: 3px;
-  padding: 7px;
-  font-weight: 700;
-  color: #fff;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 12px;
-  margin-bottom: 10px;
-  word-wrap: break-down;
-  text-align: center;
-}
 
 .container .character__meta {
   display: flex;
@@ -259,12 +238,11 @@ body {
 }
 
 @media (max-width: 400px) {
-  .container .character__attacks, .container .character__meta {
+   .container .character__meta {
     flex-wrap: wrap;
   }
 
   .container .character__meta span,
-  .container .character__attacks span,
   .container .character {
     width: 100%;
   }
@@ -272,4 +250,75 @@ body {
   .container .character__meta span {
     margin-bottom: 10px;
   }
+}
+
+.overview {
+display: flex;
+  justify-content: space-between;
+}
+.overview .overview__name {
+  background-color: #f3efe3;
+  text-align: center;
+  padding: 10px;
+}
+.overview .overview__type {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: #f3efe3;
+
+}
+.overviewE {
+
+  justify-content: space-between;
+}
+.overviewE .overviewE__name {
+  background-color: #f3efe3;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 10px;
+  display: flex;
+  margin-left: 40%;}
+
+.overviewE .overviewE__airdate {
+  background-color: #f3efe3;
+
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 300px;
+  border-radius: 10px;
+  display: flex;
+  margin-left: 40%;
+}
+.overviewE .overviewE__text {
+  background-color: #e5c051;
+  text-align: center;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 10px;
+  display: flex;
+  margin-left: 40%;
+}
+.overviewE .overviewE__character {
+  background-color: #9ebf44;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px;
+ display: flex;
+  margin-left: 42%;
+}
+.pagination{
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  margin-left: 35%;
+
 }
